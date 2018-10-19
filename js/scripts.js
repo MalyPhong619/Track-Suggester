@@ -30,9 +30,7 @@ $(document).ready(function() {
     var answerFive = parseInt($("input:radio[name=formQuestionFive]:checked").val());
     var result = userSum(answerOne, answerTwo, answerThree, answerFour, answerFive);
 
-    console.log(result);
-
-    if (result > 2 && result < 19) {
+    if (result > 2) {
       if (result > 7 && result < 11) {
         $(".cSharp-modal").toggle();
       } else if (result > 10 && result < 13) {

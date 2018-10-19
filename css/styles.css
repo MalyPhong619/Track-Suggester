@@ -1,6 +1,9 @@
 img {
   width: 50%;
 }
+.modal {
+  justify-content: center;
+}
 .jumbotron {
   font-size: 85px;
 }
