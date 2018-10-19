@@ -1,66 +1,67 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <script src="js/jquery-3.3.1.js"></script>
-    <script src="js/scripts.js"></script>
-    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
-    <link rel="stylesheet" href="css/styles.css" type="text/css">
-    <meta charset="utf-8">
-    <title>Track Suggester</title>
-  </head>
-  <body>
-    <div class="container">
-      <h1 class="jumbotron">Which Epicodus Programming track is for you?!</h1>
-      <form id="userInputForm">
-        <label for="formName">Name: </label>
-        <input type="text" name="formName">
-
+<head>
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <meta charset="utf-8">
+  <title>Track Suggester</title>
+</head>
+<body>
+  <div class="container">
+    <h1 class="jumbotron">Which Epicodus Programming track is for you?!</h1>
+    <form id="userInputForm">
+      <label for="formName">Name: </label>
+      <input type="text" name="formName">
+      <div>
         <select name="programChoice">
-          <option>Select Choice</option>
-          <option>Yes!</option>
-          <option>Sadly, No.</option>
+          <option value="default">Select Choice</option>
+          <option value="yes">Yes!</option>
+          <option value="no">Sadly, No.</option>
         </select>
+      </div>
+      <button type="submit" class="btn btn-secondary">Submit</button>
+    </form>
 
-      </form>
-
-      <form id="questionForm">
-<!-- question 1 -->
-          <div id="questionBody">
-            <h1>Do you like to learn new languages?</h1>
-            <input type="radio" name="formQuestionOne" value="3">
-            <label for="formQuestionOne">Yes!</label>
-          </div>
-          <div>
-            <input type="radio" name="formQuestionOne" value="1">
-            <label for="formQuestionOne">I like to what I know</label>
-          </div>
-          <div>
-            <input type="radio" name="formQuestionOne" value="2">
-            <label for="formQuestionOne">Sure if I have to</label>
-          </div>
-<!-- question 2 -->
-          <h1>How do you interact in the wild?</h1>
-          <div>
-          <input type="radio" name="formQuestionTwo" value="4">
-          <label for="formQuestionTwo">I like a cluster of wild animals at the water hole!</label>
-        </div>
+    <form id="questionForm">
+      <!-- question 1 -->
+        <h1>Do you like to learn new languages?</h1>
         <div>
-          <input type="radio" name="formQuestionTwo" value="2">
-          <label for="formQuestionTwo">A small puddle of water will suffice</label>
-        </div>
+        <input type="radio" name="formQuestionOne" value="3">
+        <label for="formQuestionOne">Yes!</label>
+      </div>
+      <div>
+        <input type="radio" name="formQuestionOne" value="1">
+        <label for="formQuestionOne">I like to what I know</label>
+      </div>
+      <div>
+        <input type="radio" name="formQuestionOne" value="2">
+        <label for="formQuestionOne">Sure if I have to</label>
+      </div>
+      <!-- question 2 -->
+      <h1>How do you interact in the wild?</h1>
+      <div>
+        <input type="radio" name="formQuestionTwo" value="4">
+        <label for="formQuestionTwo">I like a cluster of wild animals at the water hole!</label>
+      </div>
+      <div>
+        <input type="radio" name="formQuestionTwo" value="2">
+        <label for="formQuestionTwo">A small puddle of water will suffice</label>
+      </div>
 
-<!-- question 3 -->
-        <h1>Bigger is always better?</h1>
-        <div>
-          <input type="radio" name="formQuestionThree" value="3">
-          <label for="formQuestionThree">Bigger is definitely always better!</label>
-        </div>
-        <div>
-          <input type="radio" name="formQuestionThree" value="2">
-          <label for="">Depends on what is being seen.</label>
-        </div>
+      <!-- question 3 -->
+      <h1>Bigger is always better?</h1>
+      <div>
+        <input type="radio" name="formQuestionThree" value="3">
+        <label for="formQuestionThree">Bigger is definitely always better!</label>
+      </div>
+      <div>
+        <input type="radio" name="formQuestionThree" value="2">
+        <label for="">Depends on what is being seen.</label>
+      </div>
 
-<!-- question 4 -->
+      <!-- question 4 -->
 
       <h1>How do you see your application being used?</h1>
       <div>
@@ -76,32 +77,32 @@
         <label for="formQuestionFour">A daily useful application to have on hand</label>
       </div>
 
-<!-- question 5 -->
+      <!-- question 5 -->
 
-        <h1>Is this survey a bit boring?</h1>
-        <div>
-          <input type="radio" name="formQuestionFive" value="3">
-          <label for="formQuestionFive">Definitely!</label>
-        </div>
-        <div>
-          <input type="radio" name="formQuestionFive" value="1">
-          <label for="formQuestionFive">You can do better than this!</label>
-        </div>
-        <div>
-          <input type="radio" name="formQuestionFive" value="2">
-          <label for="formQuestionFive">No..</label>
-        </div>
+      <h1>Is this survey a bit boring?</h1>
+      <div>
+        <input type="radio" name="formQuestionFive" value="3">
+        <label for="formQuestionFive">Definitely!</label>
+      </div>
+      <div>
+        <input type="radio" name="formQuestionFive" value="1">
+        <label for="formQuestionFive">You can do better than this!</label>
+      </div>
+      <div>
+        <input type="radio" name="formQuestionFive" value="2">
+        <label for="formQuestionFive">No..</label>
+      </div>
 
-          <button type="submit" class="btn btn-secondary">What's my track?!</button>
-      </form>
-
-
+      <button type="submit" class="btn btn-secondary">What's my track?!</button>
+    </form>
 
 
 
 
 
 
-    </div>
-  </body>
+
+
+  </div>
+</body>
 </html>
