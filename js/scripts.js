@@ -18,6 +18,8 @@ $(document).ready(function() {
     } else {
       alert("Please make a selection");
     }
+
+    $(".userName").text(userName);
   });
 
   $("#questionForm").submit(function(event) {
@@ -46,6 +48,6 @@ $(document).ready(function() {
   });
   $(".close").click(function() {
     $(".modal").hide();
-  })
+  });
 
 });
