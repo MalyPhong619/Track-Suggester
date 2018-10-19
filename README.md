@@ -10,7 +10,7 @@ _This application will have the user input their name and answer a question abou
 
 ## Setup/Installation Requirements
 
-* _Clone from [Github]()_
+* _Clone from [Github](https://malyphong619.github.io/Track-Suggester/)_
 
 ## Support and contact details
 
