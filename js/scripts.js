@@ -14,11 +14,11 @@ $(document).ready(function() {
     } else {
       alert("Please make a selection");
     }
-
   });
+
   $("#questionForm").submit(function(event) {
     event.preventDefault();
-
+    
 
 
 

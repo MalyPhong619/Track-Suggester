@@ -5,13 +5,14 @@
     <script src="js/scripts.js"></script>
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Racing+Sans+One" rel="stylesheet">
     <meta charset="utf-8">
     <title>Track Suggester</title>
   </head>
   <body>
     <div class="container">
       <form id="userInputForm">
-        <h1 class="jumbotron">Which Epicodus Programming track is for you?!</h1>
+        <h1 class="jumbotron bg-info">Programming Language</h1>
         <div class="row userInput">
           <div class="col-md-6">
             <h3>Name: </h3>
@@ -39,9 +40,11 @@
         </div>
       </div>
       <form id="questionForm">
-        <h1 class="jumbotron">Program Questionaire</h1>
+        <h1 class="jumbotron bg-info">Program Questionnaire</h1>
+        <div class="row">
+          <div class="col-md-6">
         <!-- question 1 -->
-        <h1>Do you like to learn new languages?</h1>
+        <h4>Do you like to learn new languages?</h4>
         <div>
           <input type="radio" name="formQuestionOne" value="3">
           <label for="formQuestionOne">Yes!</label>
@@ -55,7 +58,7 @@
           <label for="formQuestionOne">Sure if I have to</label>
         </div>
         <!-- question 2 -->
-        <h1>How do you interact in the wild?</h1>
+        <h4>How do you interact in the wild?</h4>
         <div>
           <input type="radio" name="formQuestionTwo" value="4">
           <label for="formQuestionTwo">I like a cluster of wild animals at the water hole!</label>
@@ -65,7 +68,7 @@
           <label for="formQuestionTwo">A small puddle of water will suffice</label>
         </div>
         <!-- question 3 -->
-        <h1>Bigger is always better?</h1>
+        <h4>Bigger is always better?</h4>
         <div>
           <input type="radio" name="formQuestionThree" value="3">
           <label for="formQuestionThree">Bigger is definitely always better!</label>
@@ -74,8 +77,10 @@
           <input type="radio" name="formQuestionThree" value="2">
           <label for="">Depends on what is being seen.</label>
         </div>
+      </div>
+      <div class="col-md-6">
         <!-- question 4 -->
-        <h1>How do you see your application being used?</h1>
+        <h4>How do you see your application being used?</h4>
         <div>
           <input type="radio" name="formQuestionFour" value="4">
           <label for="formQuestionFour">I want it to make a difference</label>
@@ -89,7 +94,7 @@
           <label for="formQuestionFour">A daily useful application to have on hand</label>
         </div>
         <!-- question 5 -->
-        <h1>Is this survey a bit boring?</h1>
+        <h4>Is this survey a bit boring?</h4>
         <div>
           <input type="radio" name="formQuestionFive" value="3">
           <label for="formQuestionFive">Definitely!</label>
@@ -105,6 +110,89 @@
         <button type="submit" class="btn btn-secondary">What's my track?!</button>
       </form>
     </div>
+  </div>
+
+
+
+<!-- c-sharp modal -->
+<div class="modal cSharp-modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="img/csharp.png" alt="C# Logo">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Java modal -->
+<div class="modal java-modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="img/java.png" alt="Java Logo">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- php modal -->
+
+<div class="modal php-modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="img/php.png" alt="PHP Logo">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ruby modal -->
+<div class="modal ruby-modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="img/ruby.png" alt="Ruby Logo">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
     <div id="knowTrack">
       <h1 class="jumbotron bg-danger">If you know your track then you should follow it!</h1>
     </div>

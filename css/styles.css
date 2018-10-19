@@ -1,6 +1,9 @@
+.jumbotron {
+  font-size: 85px;
+}
 #questionForm, #knowTrack {
   display: none;
 }
- .jumbotron {
-   font-size: 50px;
- }
+h4, .jumbotron {
+  font-family: 'Racing Sans One', cursive;
+}
