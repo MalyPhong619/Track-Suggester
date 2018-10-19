@@ -23,11 +23,11 @@ $(document).ready(function() {
   $("#questionForm").submit(function(event) {
     event.preventDefault();
 
-    var answerOne = parseInt($("#formQuestionOne").val());
-    var answerTwo = parseInt($("#formQuestionOne").val());
-    var answerThree = parseInt($("#formQuestionOne").val());
-    var answerFour = parseInt($("#formQuestionOne").val());
-    var answerFive = parseInt($("#formQuestionOne").val());
+    var answerOne = parseInt($("input:radio[name=formQuestionOne]:checked").val());
+    var answerTwo = parseInt($("input:radio[name=formQuestionTwo]:checked").val());
+    var answerThree = parseInt($("input:radio[name=formQuestionThree]:checked").val());
+    var answerFour = parseInt($("input:radio[name=formQuestionFour]:checked").val());
+    var answerFive = parseInt($("input:radio[name=formQuestionFive]:checked").val());
     var result = userSum(answerOne, answerTwo, answerThree, answerFour, answerFive);
 
     console.log(result);
