@@ -16,7 +16,7 @@ $(document).ready(function() {
       $("#questionForm").show();
       $("#userInputForm").hide();
     } else {
-      alert("Please make a selection");
+      alert("Please fill all selections");
     }
 
     $(".userName").text(userName);
