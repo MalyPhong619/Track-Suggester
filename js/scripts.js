@@ -32,16 +32,20 @@ $(document).ready(function() {
 
     if (result > 2) {
       if (result > 7 && result < 11) {
-        $(".cSharp-modal").toggle('hide');
+        $(".cSharp-modal").show();
       } else if (result > 10 && result < 13) {
-        $(".java-modal").toggle('hide');
+        $(".java-modal").show();
       } else if (result > 12 && result < 15) {
-        $(".ruby-modal").toggle('hide');
+        $(".ruby-modal").show();
       } else if (result > 14 && result < 19) {
-        $(".php-modal").toggle('hide');
+        $(".php-modal").show();
       }
     } else {
       alert("Please answer all questions");
     }
   });
+  $(".close").click(function() {
+    $(".modal").hide();
+  })
+
 });
