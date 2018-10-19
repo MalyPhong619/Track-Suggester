@@ -6,11 +6,13 @@
 
 ## Description
 
+_[GH-PAGES](https://malyphong619.github.io/Track-Suggester/)_
+
 _This application will have the user input their name and answer a question about if they know or not know which track to follow. Once selected they will be prompted a survey if the user is unsure. If the use is sure they know, we wish them the best of luck. The questionnaire will then direct the user to the track best suits them_
 
 ## Setup/Installation Requirements
 
-* _Clone from [Github](https://malyphong619.github.io/Track-Suggester/)_
+* _Clone from [repository](https://github.com/MalyPhong619/Track-Suggester.git)
 
 ## Support and contact details
 
