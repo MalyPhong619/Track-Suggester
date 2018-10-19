@@ -15,6 +15,8 @@ $(document).ready(function() {
       } else if (userChoice === "no") {
         $("#questionForm").show();
         $("#userInputForm").hide();
+      } else{
+        alert("Please fill all selections");
       }
     } else {
         alert("Please fill all selections");

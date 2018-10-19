@@ -2,7 +2,7 @@ img {
   width: 50%;
 }
 .modal {
-  justify-content: center;
+  text-align: center;
 }
 .jumbotron {
   font-size: 85px;
@@ -10,6 +10,6 @@ img {
 #questionForm, #knowTrack {
   display: none;
 }
-h4, .jumbotron {
+h4, h5,s .jumbotron {
   font-family: 'Racing Sans One', cursive;
 }
