@@ -8,15 +8,16 @@ $(document).ready(function() {
 
     var userName = $("#formName").val();
     var userChoice = $("#programChoice").val();
-
-    if (userChoice === "yes") {
-      $("#knowTrack").show();
-      $("#userInputForm").hide()
-    } else if (userChoice === "no") {
-      $("#questionForm").show();
-      $("#userInputForm").hide();
+    if(userName) {
+      if (userChoice === "yes") {
+        $("#knowTrack").show();
+        $("#userInputForm").hide()
+      } else if (userChoice === "no") {
+        $("#questionForm").show();
+        $("#userInputForm").hide();
+      }
     } else {
-      alert("Please fill all selections");
+        alert("Please fill all selections");
     }
 
     $(".userName").text(userName);
@@ -49,5 +50,4 @@ $(document).ready(function() {
   $(".close").click(function() {
     $(".modal").hide();
   });
-
 });
