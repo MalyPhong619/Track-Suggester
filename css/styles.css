@@ -1,5 +1,6 @@
 img {
   width: 50%;
+  border: 1px solid;
 }
 .modal {
   text-align: center;

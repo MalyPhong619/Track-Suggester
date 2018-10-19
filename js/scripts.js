@@ -51,5 +51,6 @@ $(document).ready(function() {
   });
   $(".close").click(function() {
     $(".modal").hide();
+    location.reload();
   });
 });
