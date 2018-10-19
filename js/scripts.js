@@ -6,14 +6,23 @@ $(document).ready(function() {
     var userChoice = $("#programChoice").val();
 
     if (userChoice === "yes") {
-      $("#questionForm").show();
+      $("#knowTrack").show();
       $("#userInputForm").hide()
     } else if (userChoice === "no") {
-      $("#knowTrack").show();
-      $(".container").hide();
+      $("#questionForm").show();
+      $("#userInputForm").hide();
     } else {
       alert("Please make a selection");
     }
+
+  });
+  $("#questionForm").submit(function(event) {
+    event.preventDefault();
+
+
+
+
+
 
   });
 });

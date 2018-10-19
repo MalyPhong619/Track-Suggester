@@ -1,3 +1,6 @@
 #questionForm, #knowTrack {
   display: none;
 }
+ .jumbotron {
+   font-size: 50px;
+ }

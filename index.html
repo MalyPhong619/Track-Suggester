@@ -1,104 +1,112 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <script src="js/jquery-3.3.1.js"></script>
-  <script src="js/scripts.js"></script>
-  <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
-  <link rel="stylesheet" href="css/styles.css" type="text/css">
-  <meta charset="utf-8">
-  <title>Track Suggester</title>
-</head>
-<body>
-  <div class="container">
-    <h1 class="jumbotron">Which Epicodus Programming track is for you?!</h1>
-    <form id="userInputForm">
-      <label for="formName">Name: </label>
-      <input type="text" id="formName">
-      <div>
-        <select id="programChoice">
-          <option value="default">Select Choice</option>
-          <option value="yes">Yes!</option>
-          <option value="no">Sadly, No.</option>
-        </select>
+  <head>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <meta charset="utf-8">
+    <title>Track Suggester</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="userInputForm">
+        <h1 class="jumbotron">Which Epicodus Programming track is for you?!</h1>
+        <div class="row userInput">
+          <div class="col-md-6">
+            <h3>Name: </h3>
+            <input class="form-control" type="text" id="formName">
+            <div>
+              <h3>Have you already chosen a track?</h3>
+              <select class="form-control" id="programChoice">
+                <option value="default">Select Choice</option>
+                <option value="yes">Yes!</option>
+                <option value="no">Sadly, No.</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-secondary">Submit</button>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <p>There are many different types of languages you can learn. If you're unsure of:</p>
+          <ul>
+            <li>PHP</li>
+            <li>Java</li>
+            <li>Ruby</li>
+            <li>C#</li>
+          </ul>
+          <p>Submit your information and check to find out which one is for you!</p>
+        </div>
       </div>
-      <button type="submit" class="btn btn-secondary">Submit</button>
-    </form>
-
-    <form id="questionForm">
-      <!-- question 1 -->
+      <form id="questionForm">
+        <h1 class="jumbotron">Program Questionaire</h1>
+        <!-- question 1 -->
         <h1>Do you like to learn new languages?</h1>
         <div>
-        <input type="radio" name="formQuestionOne" value="3">
-        <label for="formQuestionOne">Yes!</label>
-      </div>
-      <div>
-        <input type="radio" name="formQuestionOne" value="1">
-        <label for="formQuestionOne">I like to what I know</label>
-      </div>
-      <div>
-        <input type="radio" name="formQuestionOne" value="2">
-        <label for="formQuestionOne">Sure if I have to</label>
-      </div>
-      <!-- question 2 -->
-      <h1>How do you interact in the wild?</h1>
-      <div>
-        <input type="radio" name="formQuestionTwo" value="4">
-        <label for="formQuestionTwo">I like a cluster of wild animals at the water hole!</label>
-      </div>
-      <div>
-        <input type="radio" name="formQuestionTwo" value="2">
-        <label for="formQuestionTwo">A small puddle of water will suffice</label>
-      </div>
-
-      <!-- question 3 -->
-      <h1>Bigger is always better?</h1>
-      <div>
-        <input type="radio" name="formQuestionThree" value="3">
-        <label for="formQuestionThree">Bigger is definitely always better!</label>
-      </div>
-      <div>
-        <input type="radio" name="formQuestionThree" value="2">
-        <label for="">Depends on what is being seen.</label>
-      </div>
-
-      <!-- question 4 -->
-
-      <h1>How do you see your application being used?</h1>
-      <div>
-        <input type="radio" name="formQuestionFour" value="4">
-        <label for="formQuestionFour">I want it to make a difference</label>
-      </div>
-      <div>
-        <input type="radio" name="formQuestionFour" value="2">
-        <label for="formQuestionFour">It's best if my application kills times</label>
-      </div>
-      <div>
-        <input type="radio" name="formQuestionFour" value="3">
-        <label for="formQuestionFour">A daily useful application to have on hand</label>
-      </div>
-
-      <!-- question 5 -->
-
-      <h1>Is this survey a bit boring?</h1>
-      <div>
-        <input type="radio" name="formQuestionFive" value="3">
-        <label for="formQuestionFive">Definitely!</label>
-      </div>
-      <div>
-        <input type="radio" name="formQuestionFive" value="1">
-        <label for="formQuestionFive">You can do better than this!</label>
-      </div>
-      <div>
-        <input type="radio" name="formQuestionFive" value="2">
-        <label for="formQuestionFive">No..</label>
-      </div>
-
-      <button type="submit" class="btn btn-secondary">What's my track?!</button>
-    </form>
-  </div>
-
-  <div id="knowTrack">
-    <h1 class="jumbotron bg-danger">If you know your track then you should follow it!</h1>
-  </div>
-</body>
+          <input type="radio" name="formQuestionOne" value="3">
+          <label for="formQuestionOne">Yes!</label>
+        </div>
+        <div>
+          <input type="radio" name="formQuestionOne" value="1">
+          <label for="formQuestionOne">I like to what I know</label>
+        </div>
+        <div>
+          <input type="radio" name="formQuestionOne" value="2">
+          <label for="formQuestionOne">Sure if I have to</label>
+        </div>
+        <!-- question 2 -->
+        <h1>How do you interact in the wild?</h1>
+        <div>
+          <input type="radio" name="formQuestionTwo" value="4">
+          <label for="formQuestionTwo">I like a cluster of wild animals at the water hole!</label>
+        </div>
+        <div>
+          <input type="radio" name="formQuestionTwo" value="2">
+          <label for="formQuestionTwo">A small puddle of water will suffice</label>
+        </div>
+        <!-- question 3 -->
+        <h1>Bigger is always better?</h1>
+        <div>
+          <input type="radio" name="formQuestionThree" value="3">
+          <label for="formQuestionThree">Bigger is definitely always better!</label>
+        </div>
+        <div>
+          <input type="radio" name="formQuestionThree" value="2">
+          <label for="">Depends on what is being seen.</label>
+        </div>
+        <!-- question 4 -->
+        <h1>How do you see your application being used?</h1>
+        <div>
+          <input type="radio" name="formQuestionFour" value="4">
+          <label for="formQuestionFour">I want it to make a difference</label>
+        </div>
+        <div>
+          <input type="radio" name="formQuestionFour" value="2">
+          <label for="formQuestionFour">It's best if my application kills times</label>
+        </div>
+        <div>
+          <input type="radio" name="formQuestionFour" value="3">
+          <label for="formQuestionFour">A daily useful application to have on hand</label>
+        </div>
+        <!-- question 5 -->
+        <h1>Is this survey a bit boring?</h1>
+        <div>
+          <input type="radio" name="formQuestionFive" value="3">
+          <label for="formQuestionFive">Definitely!</label>
+        </div>
+        <div>
+          <input type="radio" name="formQuestionFive" value="1">
+          <label for="formQuestionFive">You can do better than this!</label>
+        </div>
+        <div>
+          <input type="radio" name="formQuestionFive" value="2">
+          <label for="formQuestionFive">No..</label>
+        </div>
+        <button type="submit" class="btn btn-secondary">What's my track?!</button>
+      </form>
+    </div>
+    <div id="knowTrack">
+      <h1 class="jumbotron bg-danger">If you know your track then you should follow it!</h1>
+    </div>
+  </body>
 </html>
