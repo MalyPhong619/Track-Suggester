@@ -10,6 +10,6 @@ img {
 #questionForm, #knowTrack {
   display: none;
 }
-h4, h5,s .jumbotron {
+h4, h5, .jumbotron {
   font-family: 'Racing Sans One', cursive;
 }
