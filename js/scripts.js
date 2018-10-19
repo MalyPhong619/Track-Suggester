@@ -32,13 +32,13 @@ $(document).ready(function() {
 
     if (result > 2) {
       if (result > 7 && result < 11) {
-        $(".cSharp-modal").toggle();
+        $(".cSharp-modal").toggle('hide');
       } else if (result > 10 && result < 13) {
-        $(".java-modal").toggle();
+        $(".java-modal").toggle('hide');
       } else if (result > 12 && result < 15) {
-        $(".ruby-modal").toggle();
+        $(".ruby-modal").toggle('hide');
       } else if (result > 14 && result < 19) {
-        $(".php-modal").toggle();
+        $(".php-modal").toggle('hide');
       }
     } else {
       alert("Please answer all questions");
