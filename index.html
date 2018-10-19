@@ -11,10 +11,19 @@
   <body>
     <div class="container">
       <h1 class="jumbotron">Which Epicodus Programming track is for you?!</h1>
+      <form id="userInputForm">
+        <label for="formName">Name: </label>
+        <input type="text" name="formName">
 
-      <form class="userInputForm">
-          <label for="formName">Name: </label>
-          <input type="text" name="formName">
+        <select name="programChoice">
+          <option>Select Choice</option>
+          <option>Yes!</option>
+          <option>Sadly, No.</option>
+        </select>
+
+      </form>
+
+      <form id="questionForm">
 <!-- question 1 -->
           <div id="questionBody">
             <h1>Do you like to learn new languages?</h1>
@@ -36,21 +45,52 @@
           <label for="formQuestionTwo">I like a cluster of wild animals at the water hole!</label>
         </div>
         <div>
-          <input type="text" name="formQuestionTwo" value="2">
+          <input type="radio" name="formQuestionTwo" value="2">
           <label for="formQuestionTwo">A small puddle of water will suffice</label>
         </div>
 
 <!-- question 3 -->
         <h1>Bigger is always better?</h1>
         <div>
-          <input type="text" name="formQuestionThree" value="3">
+          <input type="radio" name="formQuestionThree" value="3">
           <label for="formQuestionThree">Bigger is definitely always better!</label>
         </div>
         <div>
-          <input type="text" name="formQuestionThree" value="2">
+          <input type="radio" name="formQuestionThree" value="2">
           <label for="">Depends on what is being seen.</label>
         </div>
 
+<!-- question 4 -->
+
+      <h1>How do you see your application being used?</h1>
+      <div>
+        <input type="radio" name="formQuestionFour" value="4">
+        <label for="formQuestionFour">I want it to make a difference</label>
+      </div>
+      <div>
+        <input type="radio" name="formQuestionFour" value="2">
+        <label for="formQuestionFour">It's best if my application kills times</label>
+      </div>
+      <div>
+        <input type="radio" name="formQuestionFour" value="3">
+        <label for="formQuestionFour">A daily useful application to have on hand</label>
+      </div>
+
+<!-- question 5 -->
+
+        <h1>Is this survey a bit boring?</h1>
+        <div>
+          <input type="radio" name="formQuestionFive" value="3">
+          <label for="formQuestionFive">Definitely!</label>
+        </div>
+        <div>
+          <input type="radio" name="formQuestionFive" value="1">
+          <label for="formQuestionFive">You can do better than this!</label>
+        </div>
+        <div>
+          <input type="radio" name="formQuestionFive" value="2">
+          <label for="formQuestionFive">No..</label>
+        </div>
 
           <button type="submit" class="btn btn-secondary">What's my track?!</button>
       </form>
